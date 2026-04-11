@@ -1,0 +1,25 @@
+version: "1.0"
+
+name: "SmartMail AI"
+description: "Email classification environment using OpenEnv"
+
+entry_point: env:EmailEnv
+
+tasks:
+  - id: easy_task
+    name: Easy
+    description: "Easy binary classification task"
+    difficulty: easy
+    grader: "tasks.easy.grader:grade"
+
+  - id: medium_task
+    name: Medium
+    description: "Multi-class classification task"
+    difficulty: medium
+    grader: "tasks.medium.grader:grade"
+
+  - id: hard_task
+    name: Hard
+    description: "Advanced classification task"
+    difficulty: hard
+    grader: "tasks.hard.grader:grade"
