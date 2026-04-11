@@ -19,5 +19,5 @@ dependencies = [
 server = "server.app:main"
 
 [tool.setuptools]
-packages = ["server", "tasks", "tasks.easy", "tasks.medium", "tasks.hard"]
+packages = ["server", "email_tasks", "email_tasks.easy", "email_tasks.medium", "email_tasks.hard"]
 py-modules = ["env", "agent", "inference"]
