@@ -32,13 +32,13 @@ class EmailEnv:
 
         try:
             if self.current_task == "easy_task":
-                from tasks.easy.grader import grade
+                from email_tasks.easy.grader import grade
                 reward = grade(self.text, action, info)
             elif self.current_task == "medium_task":
-                from tasks.medium.grader import grade
+                from email_tasks.medium.grader import grade
                 reward = grade(self.text, action, info)
             elif self.current_task == "hard_task":
-                from tasks.hard.grader import grade
+                from email_tasks.hard.grader import grade
                 reward = grade(self.text, action, info)
             else:
                 reward = 0.5
